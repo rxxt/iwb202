@@ -1,0 +1,523 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    background-color: #e0e0e0;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: #163a5f;
+}
+
+.site-header {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    background-color: #163a5f;
+    color: #ffffff;
+    padding: 18px 30px;
+}
+
+.site-header > img {
+    width: 94px;
+    height: 74px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.header-text {
+    flex: 1 1 230px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 27px;
+}
+
+.header-subtitle {
+    color: #e7eef5;
+    font-size: 15px;
+    margin: 2px 0 0;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.site-nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 7px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background-color: #ffffff;
+    color: #163a5f;
+}
+
+.page-container {
+    width: 94%;
+    max-width: 1220px;
+    margin: 26px auto;
+}
+.teacher{
+    text-align: center;
+}
+.teacher h2{
+    display: inline-block;
+     color: #163a5f;
+     font-size: 30px;
+      padding: 5px 5px;
+      border-top: 2px solid #2B2D42;
+      border-bottom: 2px solid black;
+
+
+}
+
+.group {
+    color: #163a5f;
+    padding: 10px 5px 8px;
+    margin: 12px 0;
+    font-size: 27px;
+}
+
+.page-lead,
+.desc {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 5px 5px 18px;
+}
+
+.intro-card,
+.info-card,
+.booking-card,
+.contact-card,
+.selected-summary,
+.result-card {
+    background-color: #ffffff;
+    border: 1px solid #d1dbe3;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    box-shadow: 0 3px 12px rgba(22, 58, 95, 0.07);
+}
+
+.intro-card p,
+.info-card p {
+    font-size: 17px;
+    margin: 8px 5px;
+}
+
+.intro-links a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.intro-links span {
+    color: #8a969f;
+    margin: 0 10px;
+}
+
+.notice {
+    color: #8b4b00;
+    background-color: #fff5df;
+    border-right: 4px solid #d99a27;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin: 16px 0 22px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.students,
+.cars-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.students {
+    min-width: 560px;
+}
+
+.cars-table {
+    min-width: 950px;
+}
+
+.students th,
+.cars-table th {
+    background-color: #163a5f;
+    color: #ffffff;
+    padding: 13px 10px;
+    font-size: 16px;
+}
+
+.students td,
+.cars-table td {
+    padding: 11px 9px;
+    border: 1px solid #c5d0d9;
+}
+
+.students tbody tr:nth-child(even),
+.cars-table tbody tr.car-row:nth-child(4n + 3) {
+    background-color: #f2f6f9;
+}
+
+.car-image {
+    display: block;
+    width: 112px;
+    height: 72px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 7px;
+    border: 1px solid #d1dbe3;
+}
+
+.car-code {
+    direction: ltr;
+    font-weight: bold;
+    color: #163a5f;
+}
+
+.car-price {
+    direction: ltr;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.details-toggle,
+.car-select {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #163a5f;
+}
+
+.details-row {
+    display: none;
+    background-color: #eaf1f7;
+}
+
+.details-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+    padding: 7px;
+}
+
+.details-panel span {
+    white-space: nowrap;
+}
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1 1 58%;
+}
+
+.about-image {
+    flex: 1 1 38%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    border-radius: 14px;
+}
+
+.loc {
+    padding-right: 25px;
+    margin: 10px 0 22px;
+}
+
+.loc li,
+.contact-list li {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.branch,
+.contact-label {
+    color: #163a5f;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.contact-list a {
+    text-decoration: none;
+}
+
+.selection-actions,
+.form-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0 24px;
+}
+
+.primary-button,
+.secondary-button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 26px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.primary-button {
+    color: #ffffff;
+    background-color: #163a5f;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: #245783;
+}
+
+.secondary-button {
+    color: #163a5f;
+    background-color: #e7eef5;
+    border: 1px solid #b9c9d7;
+}
+
+.error-message,
+.error-box {
+    color: #8a1f1f;
+    background-color: #fff0f0;
+    border: 1px solid #e5bcbc;
+    border-radius: 7px;
+    padding: 10px 14px;
+}
+
+.booking-card {
+    margin-top: 28px;
+}
+
+.selected-summary {
+    background-color: #f3f7fa;
+    box-shadow: none;
+}
+
+.selected-summary h3,
+.result-card h3 {
+    color: #163a5f;
+    margin-bottom: 8px;
+}
+
+.selected-summary ul,
+.result-card ul {
+    padding-right: 24px;
+}
+
+fieldset {
+    border: 1px solid #b9c9d7;
+    border-radius: 9px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+legend {
+    color: #163a5f;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-field label {
+    display: block;
+    color: #243746;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+    width: 100%;
+    min-height: 42px;
+    color: #263238;
+    background-color: #ffffff;
+    border: 1px solid #aebdca;
+    border-radius: 6px;
+    padding: 9px 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #9bb8d2;
+    border-color: #163a5f;
+}
+
+.field-hint {
+    display: block;
+    color: #667681;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.required-mark {
+    color: #b3261e;
+}
+
+.error-box {
+    margin: 15px 0;
+}
+
+.error-box ul {
+    padding: 7px 24px 0 0;
+}
+
+.result-card {
+    border-right: 5px solid #2e7d50;
+}
+
+.result-card p {
+    margin: 7px 0;
+}
+
+.final-total {
+    color: #17633b;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 12px !important;
+}
+
+.result-note {
+    color: #5d6971;
+    font-size: 13px;
+    border-top: 1px solid #d9e1e7;
+    padding-top: 9px;
+    margin-top: 14px !important;
+}
+
+.site-footer {
+    color: #ffffff;
+    background-color: #163a5f;
+    text-align: center;
+    padding: 14px;
+    margin-top: 35px;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        padding: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 21px;
+    }
+
+    .site-nav {
+        width: 100%;
+    }
+
+    .site-nav a {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .page-container {
+        width: 96%;
+        margin: 18px auto;
+    }
+
+    .group {
+        font-size: 23px;
+    }
+
+    .about-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.report-sheet {
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 28px 36px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(22, 58, 95, 0.07);
+}
+
+.report-sheet h2 {
+    color: #163a5f;
+    font-size: 19px;
+    margin: 16px 0 5px;
+}
+
+.report-sheet p,
+.report-sheet li {
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.report-sheet ol {
+    padding-right: 28px;
+}
+
+.report-note {
+    background-color: #f0f5f8;
+    padding: 10px 14px;
+    border-right: 4px solid #163a5f;
+    margin-top: 18px;
+}
+
+@media print {
+    body { background-color: #ffffff; }
+    .report-sheet { width: 100%; max-width: none; margin: 0; padding: 0; box-shadow: none; }
+}
